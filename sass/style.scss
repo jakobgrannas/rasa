@@ -2,21 +2,19 @@
  * Imports
  */
 @import 'utils/variables';
-@import 'utils/reset';
+@import 'utils/helpers';
 @import 'utils/flex';
 
 @import 'atoms/alerts';
 @import 'atoms/buttons';
 @import 'atoms/fonts';
 @import 'atoms/icons';
-@import 'atoms/logo';
 @import 'atoms/display';
-@import 'atoms/separator';
 @import 'atoms/spinner';
 @import 'atoms/headings';
 @import 'atoms/links';
 
-@import 'molecules/menu';
+@import 'molecules/mobile-menu';
 @import 'molecules/search';
 @import 'molecules/sorting';
 @import 'molecules/form';
@@ -31,7 +29,6 @@
 @import 'organisms/footer';
 
 @import 'templates/default-layout';
-@import 'templates/single-image-page';
 
 // Media queries
 @import 'utils/media-queries'; // TODO: Spread across affected modules
@@ -70,7 +67,7 @@ img {
 */
 
 .chromeframe {
-	margin: 0.2em 0;
+	margin: 0;
 	background: #ccc;
 	color: black;
 	padding: 0.2em 0;
@@ -79,15 +76,3 @@ img {
 	display: block;
 	z-index: 9999;
 }
-
-/* Supports not 
-@supports not (flex-wrap: wrap) {
-	.gallery-section {
-		display: block;
-	}
-
-	.image-block {
-		min-width: 8em;
-	}
-}
-*/

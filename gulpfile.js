@@ -10,7 +10,6 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	paths = {
 		scripts: './js/*.js',
-		styles: ['./css/*.css', '!./css/enhance.css'],
 		sass: {
 			src: './sass/**/*.scss',
 			dest: './dist/css/'
@@ -38,11 +37,7 @@ gulp.task('sass', function() {
 	return gulp.src(paths.sass.src)
 		.pipe(sass({
 			imagePath: '../images',
-			includePaths: ['utils', 'atoms', 'molecules', 'organisms', 'templates'],
-			error: function(css) {
-				console.log(css);
-				console.log(stats);
-			}
+			includePaths: ['utils', 'atoms', 'molecules', 'organisms', 'templates']
 		}))
 		.pipe(gulp.dest(paths.sass.dest))
 		.pipe(minifyCSS())
@@ -76,11 +71,10 @@ gulp.task('clean', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(paths.scripts, ['scripts']);
-	//gulp.watch(paths.styles, ['styles']);
 	gulp.watch(paths.images, ['images']);
 	gulp.watch(paths.sass.src, ['sass']);
 });
 
 gulp.task('default', ['clean'], function() {
-	gulp.start('scripts', /*'styles',*/ 'images', 'fonts', 'sass', 'build-todo');
+	gulp.start('scripts', 'images', 'fonts', 'sass', 'build-todo');
 });

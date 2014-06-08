@@ -1,6 +1,7 @@
 /**
  * Variables
  */
+// Base colors
 $base-color: #469a73;
 $secondary-disabled-color: darken($base-color, 20%);
 $primary-bg-color: #f3f5f0;
@@ -11,3 +12,7 @@ $toggler-inactive-bg-color: darken(desaturate($primary-bg-color, 10%), 15%);
 
 // Paths
 $font-path: '../../fonts';
+
+// Mobile Menu
+$mobile-menu-width: 15em;
+$mobile-menu-negative-width: 0 - $mobile-menu-width;

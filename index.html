@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-	<!--[if IE 8]>
-	<html class="no-js lt-ie9"> <![endif]-->
-	<!--[if gt IE 8]><!-->
-	<html class="no-js"> <!--<![endif]-->
+	<!--[if lt IE 9]>
+	<html class="no-js ie8"> <![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,29 +8,28 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" href="css/vendor/normalize.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/enhance.css">
+		<link rel="stylesheet" href="dist/css/normalize.min.css">
+		<link rel="stylesheet" href="dist/css/style.css">
 
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 9]>
-		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+		<p class="chromeframe alert alert-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
 			your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
 			improve your experience.</p>
 		<![endif]-->
 
-		<nav class="boxsized main-menu animate menu-right menu-closed" id="main-nav">
+		<nav class="boxsized mobile-menu animate menu-right menu-closed" id="main-nav">
 			<div class="boxsized search-field-container">
 				<input type="text" id="search" class="search-field" name="search" placeholder="search...">
 				<button class="btn search-btn"><span class="fa search-icon"></span></button>
 			</div>
 			<div class="boxsized menu-items">
-				<a href="index.html">Startsida</a>
-				<a href="gallery.html">Fotografi</a>
-				<a href="#">Blogg</a>
-				<a href="#">Kontakta mig</a>
+				<a href="index.html" class="menu-item">Startsida</a>
+				<a href="gallery.html" class="menu-item">Fotografi</a>
+				<a href="#" class="menu-item">Blogg</a>
+				<a href="#" class="menu-item">Kontakta mig</a>
 			</div>
 		</nav>
 
@@ -60,7 +57,7 @@
 				</div>
 			</header>
 
-			<main role="main" class="boxsized main">
+			<main role="main" class="boxsized main clearfix">
 				<div class="section">
 					<div class="centered-inner">
 						<article class="main-content">
@@ -79,46 +76,6 @@
 								<p>Ok, I’m going to write another paragraph, but who’s really going to read anything written this far down the page?</p>
 							</section>
 						</article>
-					</div>
-				</div>
-
-				<div class="section">
-					<div class="separator">
-						<span class="separator-line"></span>
-						<span class="x-icon">x</span>
-						<span class="separator-line"></span>
-					</div>
-				</div>
-
-				<div class="section">
-					<div class="centered-inner gallery-section">
-						<!--<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>
-						<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>
-						<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>
-						<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>
-						<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>
-						<a href="#" class="image-block">
-							<span class="preview-overlay"><span class="fa search-plus-icon"></span></span>
-							<img src="images/patrik.jpg" width="100%" height="100%" class="preview-thumbnail">
-						</a>-->
-						<div class="button-row">
-							<button class="btn btn-default btn-big">Hela galleriet</button>
-						</div>
 					</div>
 				</div>
 			</main>

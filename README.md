@@ -3,7 +3,7 @@ Rasa
 
 Baseline responsive HTML/CSS template that can be used on any site.
 
-## What's in it
+#What's in it
 - Mobile first repsonsive template
 - Modular CSS naming
 - Atomic Design inspired Sass file structure
@@ -11,3 +11,9 @@ Baseline responsive HTML/CSS template that can be used on any site.
 
 - Gulp-modernizr custom minimized modernizr script
 - IE8 compatible
+- Accessibility in mind
+- No-JS mobile menu
+
+#Run it
+``` npm install ```
+``` gulp ``` 

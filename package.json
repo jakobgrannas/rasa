@@ -1,8 +1,8 @@
 {
-  "name": "patrikblom",
-  "description": "Minifying and stuff",
+  "name": "Rasa",
+  "description": "Baseline HTML/CSS template",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "author": "Jakob Grannas",
   "dependencies": {},
   "devDependencies": {
@@ -11,7 +11,7 @@
     "gulp-clean": "~0.2.4",
     "gulp-rename": "~1.2.0",
     "gulp-imagemin": "~0.1.5",
-    "gulp": "~3.6.0",
+    "gulp": "~3.7.0",
     "gulp-concat": "~2.2.0",
     "gulp-sass": "~0.7.1",
     "gulp-todo": "~0.2.0",

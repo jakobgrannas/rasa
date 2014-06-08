@@ -1,0 +1,86 @@
+/**
+ * Helper classes
+ */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visible { // Was visually-active
+  display: block !important;
+  visibility: visible;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+	zoom:1;
+}
+
+/* Box model */
+.reset-box-model {
+	padding: 0;
+	margin: 0;
+}
+
+.boxsized {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Lists */
+.bare-list li {
+	list-style: none;
+}
+
+// Animate
+.animate {
+  -webkit-transition: -webkit-transform 350ms ease;
+  -moz-transition: -moz-transform 350ms ease;
+  transition: transform 350ms ease;
+}

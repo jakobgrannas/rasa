@@ -2,13 +2,14 @@
  * Default layout
  */
 .wrapper {
-	z-index: 20;
-	position: relative;
+	z-index: 20; // Required for mobile menu to work
+	position: relative; // Required for mobile menu to work
 }
 
 .main {
 	padding: 0 1.2em 6em 1.2em;
-	background-color: #f3f5f0;
+	background-color: white;
+	float: left;
 	color: #444444;
 	width: 100%;
 }
@@ -69,4 +70,13 @@
 .excerpt-read-more {
 	display: block;
 	margin-top: 1em;
+}
+
+.ie8 .scroll-top-btn {
+	font-size: 1em;
+	padding: 0.4em 0.8em;
+
+	&:after {
+		content: "top";
+	}
 }
