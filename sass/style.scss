@@ -9,7 +9,6 @@
 @import 'atoms/buttons';
 @import 'atoms/fonts';
 @import 'atoms/icons';
-@import 'atoms/display';
 @import 'atoms/spinner';
 @import 'atoms/headings';
 @import 'atoms/links';
@@ -18,15 +17,10 @@
 @import 'molecules/search';
 @import 'molecules/sorting';
 @import 'molecules/form';
-@import 'molecules/comment';
-@import 'molecules/gallery-image';
 
 @import 'organisms/banner';
-@import 'organisms/post';
-@import 'organisms/comments';
 @import 'organisms/respond-form';
 @import 'organisms/gallery';
-@import 'organisms/footer';
 
 @import 'templates/default-layout';
 

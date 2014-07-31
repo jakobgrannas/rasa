@@ -91,6 +91,15 @@ a:visited.scroll-top-btn {
 	color: white;
 }
 
+.ie8 .scroll-top-btn {
+	font-size: 1em;
+	padding: 0.4em 0.8em;
+
+	&:after {
+		content: "top";
+	}
+}
+
 /* Button text */
 .btn-text {
 	display: none;
